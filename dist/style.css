@@ -95,7 +95,7 @@ footer a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url(images/bg-pattern-mobile.svg) no-repeat center;
+  background: url(../images/bg-pattern-mobile.svg) no-repeat center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -108,7 +108,7 @@ footer a {
     left: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    background: url(images/bg-pattern-desktop.svg) no-repeat center;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat center;
   }
 }
 .faq__left-col::after {
@@ -120,7 +120,7 @@ footer a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url(images/illustration-woman-online-mobile.svg) no-repeat center;
+  background: url(../images/illustration-woman-online-mobile.svg) no-repeat center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -133,7 +133,7 @@ footer a {
     left: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    background: url(images/illustration-woman-online-desktop.svg) no-repeat center;
+    background: url(../images/illustration-woman-online-desktop.svg) no-repeat center;
   }
 }
 .faq__right-col {
@@ -181,7 +181,7 @@ footer a {
   height: 7px;
   top: 0.3625rem;
   right: 0;
-  background: url("images/icon-arrow-down.svg") no-repeat center;
+  background: url("../images/icon-arrow-down.svg") no-repeat center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
