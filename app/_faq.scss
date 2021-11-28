@@ -40,7 +40,7 @@
       top: rem(-24);
       left: 50%;
       transform: translateX(-50%);
-      background: url(/images/bg-pattern-mobile.svg) no-repeat center;
+      background: url(images/bg-pattern-mobile.svg) no-repeat center;
       transition: 0.5s;
       @include breakpoint-up(large) {
         width: rem(966);
@@ -49,7 +49,7 @@
         right: rem(87);
         left: auto;
         transform: translateX(0);
-        background: url(/images/bg-pattern-desktop.svg) no-repeat center;
+        background: url(images/bg-pattern-desktop.svg) no-repeat center;
       }
     }
     //illustration-woman-img
@@ -61,7 +61,7 @@
       top: rem(-115);
       left: 50%;
       transform: translateX(-50%);
-      background: url(/images/illustration-woman-online-mobile.svg) no-repeat center;
+      background: url(images/illustration-woman-online-mobile.svg) no-repeat center;
       transition: 0.5s;
       @include breakpoint-up(large) {
         width: rem(472);
@@ -70,7 +70,7 @@
         right: rem(87);
         left: auto;
         transform: translateX(0);
-        background: url(/images/illustration-woman-online-desktop.svg) no-repeat center;
+        background: url(images/illustration-woman-online-desktop.svg) no-repeat center;
       }
     }
   }
@@ -118,7 +118,7 @@
       height: 7px;
       top: rem(5.8);
       right: 0;
-      background: url('/images/icon-arrow-down.svg') no-repeat center;
+      background: url('images/icon-arrow-down.svg') no-repeat center;
       transition: 0.3s;
       @include breakpoint-up(large) {
         top: rem(6.8);
