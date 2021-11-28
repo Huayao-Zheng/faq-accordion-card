@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - [Live](https://lonelybuddy.github.io/faq-accordion-card/)
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/htm-css3sass-Sy9gJ4MlA)
 
 ### Built with
 

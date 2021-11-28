@@ -24,6 +24,10 @@ p {
   margin: 0;
 }
 
+span {
+  display: block;
+}
+
 body {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--softViolet)), to(var(--softBlue)));
@@ -204,13 +208,13 @@ footer a {
 input[type=checkbox] {
   display: none;
 }
-input:checked ~ div.faq__a {
+input:checked ~ span.faq__a {
   height: 3.25rem;
 }
-input:checked ~ div.faq__q {
+input:checked ~ span.faq__q {
   font-weight: 700;
 }
-input:checked ~ div.faq__q::after {
+input:checked ~ span.faq__q::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

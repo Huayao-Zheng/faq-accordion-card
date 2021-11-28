@@ -141,13 +141,13 @@ input {
   &[type='checkbox'] {
     display: none;
   }
-  &:checked ~ div.faq__a {
+  &:checked ~ span.faq__a {
     height: rem(52);
   }
-  &:checked ~ div.faq__q {
+  &:checked ~ span.faq__q {
     font-weight: 700;
   }
-  &:checked ~ div.faq__q::after {
+  &:checked ~ span.faq__q::after {
     transform: rotate(180deg);
   }
 }
