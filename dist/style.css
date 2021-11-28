@@ -40,6 +40,31 @@ body {
   background: #fff;
   border-radius: 1.4375rem;
 }
+.faq__left-col {
+  position: relative;
+}
+.faq__left-col::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 9.0625rem;
+  top: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url(/images/bg-pattern-mobile.svg) no-repeat center;
+}
+.faq__left-col::after {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 12rem;
+  top: -7.1875rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url(/images/illustration-woman-online-mobile.svg) no-repeat center;
+}
 .faq__right-col {
   padding: 8.25rem 1.5rem 3rem 1.5rem;
 }
@@ -54,6 +79,9 @@ body {
   cursor: pointer;
   border-bottom: 1px var(--lightGrayishBlue) solid;
 }
+.faq label:not(:last-child) {
+  margin-bottom: 1.0625rem;
+}
 .faq input[type=checkbox] {
   display: none;
 }
@@ -61,16 +89,19 @@ body {
   height: 3.25rem;
 }
 .faq input:checked ~ div.faq__q::after {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .faq__q {
   line-height: 0.8175rem;
   font-size: clamp(0.8125rem, 0.7656rem + 0.2083vw, 0.875rem);
+  color: var(--veryDarkGrayishBlue);
   position: relative;
+  margin-bottom: 18px;
 }
 .faq__q:hover {
   font-weight: 700;
+  color: var(--veryDarkDesaturatedBlue);
 }
 .faq__q::after {
   content: "";
@@ -85,7 +116,8 @@ body {
 }
 .faq__a {
   font-size: 0.75rem;
-  color: var(--veryDarkGrayishBlue);
+  color: var(--darkGrayishBlue);
+  padding-right: 0.625rem;
   height: 0;
   overflow: hidden;
   -webkit-transition: 0.5s;
