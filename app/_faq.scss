@@ -1,0 +1,69 @@
+@use 'function' as *;
+@use 'breakpoint' as *;
+
+.faq {
+  width: rem(327);
+  background: #fff;
+  border-radius: rem(23);
+
+  &__left-col {
+  }
+
+  &__right-col {
+    padding: rem(132) rem(24) rem(48) rem(24);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: rem(32);
+    line-height: rem(32.19);
+    margin-bottom: rem(38);
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px var(--lightGrayishBlue) solid;
+  }
+
+  input {
+    &[type='checkbox'] {
+      display: none;
+    }
+    &:checked ~ div.faq__a {
+      height: rem(52);
+      // height: auto;
+      // margin: rem(12) 0 rem(16) 0;
+    }
+    &:checked ~ div.faq__q::after {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__q {
+    line-height: rem(13.08);
+    font-size: clamp(0.8125rem, 0.7656rem + 0.2083vw, 0.875rem);
+    position: relative;
+    &:hover {
+      font-weight: 700;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 7px;
+      top: rem(3);
+      right: 0;
+      background: url('/images/icon-arrow-down.svg') no-repeat center;
+      transition: 0.3s;
+    }
+  }
+
+  &__a {
+    font-size: rem(12);
+    color: var(--veryDarkGrayishBlue);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}

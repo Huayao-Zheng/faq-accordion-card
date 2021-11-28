@@ -1,0 +1,41 @@
+@use 'breakpoint' as *;
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--softViolet) 0%, var(--softBlue) 100%);
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-weight: 400;
+  font-size: rem(12);
+}
+
+// footer {
+//   color: var(--soft-blue);
+//   position: absolute;
+//   bottom: 30px;
+//   font-size: 12px;
+
+//   @include breakpoint-up(medium) {
+//     font-size: 18px;
+//   }
+
+//   a {
+//     color: var(--cyan);
+//   }
+// }

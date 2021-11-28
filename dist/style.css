@@ -1,0 +1,93 @@
+:root {
+  --veryDarkDesaturatedBlue: #1d1e35;
+  --softRed: #f47c57;
+  --softViolet: #af67e9;
+  --softBlue: #6565e7;
+  --veryDarkGrayishBlue: #4a4b5e;
+  --darkGrayishBlue: #787887;
+  --lightGrayishBlue: #e7e7e9;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--softViolet)), to(var(--softBlue)));
+  background: linear-gradient(180deg, var(--softViolet) 0%, var(--softBlue) 100%);
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-weight: 400;
+  font-size: rem(12);
+}
+
+.faq {
+  width: 20.4375rem;
+  background: #fff;
+  border-radius: 1.4375rem;
+}
+.faq__right-col {
+  padding: 8.25rem 1.5rem 3rem 1.5rem;
+}
+.faq h1 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.011875rem;
+  margin-bottom: 2.375rem;
+}
+.faq label {
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px var(--lightGrayishBlue) solid;
+}
+.faq input[type=checkbox] {
+  display: none;
+}
+.faq input:checked ~ div.faq__a {
+  height: 3.25rem;
+}
+.faq input:checked ~ div.faq__q::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.faq__q {
+  line-height: 0.8175rem;
+  font-size: clamp(0.8125rem, 0.7656rem + 0.2083vw, 0.875rem);
+  position: relative;
+}
+.faq__q:hover {
+  font-weight: 700;
+}
+.faq__q::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 7px;
+  top: 0.1875rem;
+  right: 0;
+  background: url("/images/icon-arrow-down.svg") no-repeat center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.faq__a {
+  font-size: 0.75rem;
+  color: var(--veryDarkGrayishBlue);
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */
